@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <title>Facelet Title</title>
+    </h:head>
+    <h:body>
+        <h:form id="form">
+            <br/>
+            <br/>
+            <h:outputLabel for="l1">Digite su nombre:</h:outputLabel>
+            <h:inputText id="nombreT" value="#{controladorPrincipal.nombreT}">   </h:inputText>
+            <br/>
+            <br/>
+            <h:outputLabel for="l2">Digite salario diario:</h:outputLabel>
+            <h:inputText id="salarioT" value="#{controladorPrincipal.salarioT}">   </h:inputText>
+            <br/>
+            <br/>
+            <h:outputLabel for="l3">Digite dias laborados:</h:outputLabel>
+            <h:inputText id="diasT" value="#{controladorPrincipal.diasT}">  </h:inputText>
+            <br/>
+            <br/>
+            <h:outputLabel for="l4">Idiomas manejados:</h:outputLabel>
+            <h:selectManyCheckbox id="idiomaT" value="#{controladorPrincipal.idiomaT}">  
+                <f:selectItem itemValue="50000" itemLabel="Español"/>
+                <f:selectItem itemValue="200000" itemLabel="Ingles"/>
+                <f:selectItem itemValue="500000" itemLabel="Frances"/>
+                <f:selectItem itemValue="1000000" itemLabel="Mandarin"/>
+            </h:selectManyCheckbox>
+            <br/>
+            <br/>
+            <h:commandButton
+                value="Calcular "
+                action="#{controladorPrincipal.calcular()}" > 
+                
+            </h:commandButton>
+            
+        </h:form>
+    </h:body>
+</html>
+

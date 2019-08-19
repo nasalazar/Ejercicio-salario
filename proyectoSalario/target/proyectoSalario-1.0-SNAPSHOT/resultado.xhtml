@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <h:head>
+        <title>Facelet Title</title>
+    </h:head>
+    <h:body>
+        <h:outputLabel for="l1"> SALARIO DEVENGADO </h:outputLabel>
+        <br/>
+        <br/>
+        <h:outputLabel for="l2"> #{controladorSalario.obtenerNombre()}</h:outputLabel>
+        <br/>
+        <br/>
+        <h:outputLabel for="l3"> Este mes laboró :  #{controladorSalario.obtenerDias()}  dias </h:outputLabel>
+        <br/>
+        <br/>
+        <h:outputLabel for="l4"> Cada dia laborado tiene un costo de: $  #{controladorSalario.obtenerSalario()}  </h:outputLabel>
+        <br/>
+        <br/>
+        <h:outputLabel for="l5"> Su salario sin valor de idiomas hablados es: $ #{persona.obtenerSalarioT()} </h:outputLabel>
+        <br/>
+        <br/>
+        <h:outputLabel for="l6"> Este mes hablo  #{persona.numeroIdiomas()} idiomas </h:outputLabel>
+        <br/>
+        <br/>
+        <h:outputLabel for="l7"> Valor extra de los idiomas: #{persona.obtenerValorIdiomas()} </h:outputLabel>
+        <br/>
+        <br/>
+        <h:outputLabel for="l8"> Valor total devengado: #{persona.obtenerSalarioTotal()} </h:outputLabel>
+    </h:body>
+</html>
+
